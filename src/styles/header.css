@@ -6,17 +6,19 @@
 }
 body{
     font-family: sans-serif;
-    color: white;
-    background-color: #0a192f;
+    /* color: rgb(255, 255, 255); */
+    /* background-color: #0a192f; */
 }
 a{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     padding: 10px 5%;
     align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: #0a192f;
 }
 .logo{
     font-size: 25px;
