@@ -6,6 +6,10 @@
   font-family: sans-serif;
 }
 
+body{
+  background-color: #0a192f;
+}
+
 .contact, 
 .experience, 
 .work{

@@ -8,6 +8,7 @@ import * as FaIcons from 'react-icons/fa';
 import { SidebarData } from './SidebarData';
 import {IconContext} from 'react-icons'
 import { Link } from 'react-router-dom';
+import Home from './Home';
 
 const Header = () =>{
 
@@ -87,6 +88,7 @@ const Header = () =>{
             </nav>
             </IconContext.Provider>
             </div>
+            {/* <Home/> */}
         </>
     )
 }
