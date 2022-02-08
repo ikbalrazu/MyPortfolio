@@ -3,7 +3,8 @@ const Home = () => {
 
     return(
         <>
-        <h1>this is home</h1>
+        <h1 style={{transform:"rotate(-90deg)",textDecoration:"outline"}}>
+            this is home</h1>
         </>
     )
 };
