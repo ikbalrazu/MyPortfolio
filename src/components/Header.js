@@ -8,6 +8,7 @@ import * as FaIcons from 'react-icons/fa';
 import { SidebarData } from './SidebarData';
 import {IconContext} from 'react-icons'
 import { Link } from 'react-router-dom';
+import Home from './Home';
 
 const Header = () =>{
 
@@ -39,7 +40,19 @@ const Header = () =>{
                     {/* <a href="#">Experience</a> */}
                 </li>
                 <li>
+                    <Link to="#">Services</Link>
+                    {/* <a href="#">Experience</a> */}
+                </li>
+                <li>
+                    <Link to="#">Skills</Link>
+                    {/* <a href="#">Experience</a> */}
+                </li>
+                <li>
                     <Link to="/work">Work</Link>
+                    {/* <a href="#">Work</a> */}
+                </li>
+                <li>
+                    <Link to="/work">Blog</Link>
                     {/* <a href="#">Work</a> */}
                 </li>
                 <li>
@@ -87,6 +100,7 @@ const Header = () =>{
             </nav>
             </IconContext.Provider>
             </div>
+            {/* <Home/> */}
         </>
     )
 }

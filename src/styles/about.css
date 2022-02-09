@@ -1,0 +1,61 @@
+
+.profile-container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto 500px 200px;
+    gap:5px;
+    padding: 60px;
+}
+.aboutme{
+    text-align: center;
+    padding: 10px;
+    grid-column: 1/-1;
+}
+.aboutmeheadline::before{
+    color: #ccd6f6;
+    content: "About Me";
+}
+/* .aboutmeheadline::after{
+    display: block;
+    margin-left: 10px;
+    width: 100px;
+    position: absolute;
+    content: " ";
+    top: 1px;
+    border-bottom: 1px solid white;
+    
+} */
+/* .aboutme-child{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.aboutme-child1{
+    color: #ccd6f6;
+}
+.aboutme-child2{
+    margin-left: 10px;
+    width: 200px;
+    border-bottom: 0.2px solid white;
+} */
+.summeryaboutme{
+
+    grid-column: 1/8;
+    background-color: wheat;
+}
+.progileimage{
+    grid-column: 8/-1;
+    /* background-image: url("../images/mypicture.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;*/
+    border-radius: 5px; 
+}
+.skills{
+    grid-column: 1/-1;
+    background-color: yellow;
+}
+@media screen and (max-width: 600px){
+
+}
