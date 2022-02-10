@@ -1,0 +1,15 @@
+.parent-container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap:10px;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+.child-container{
+    grid-column: 1/-1;
+    text-align: center;
+    color: #ccd6f6;
+}
+.Timeline{
+    grid-column: 1/-1;
+}

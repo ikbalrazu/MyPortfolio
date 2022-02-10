@@ -2,26 +2,26 @@
 export const ExperienceData = [
     {
         Image:"",
-        Title:"",
+        Title:"Software Engineer",
         EmploymentType:"",
-        CompanyName:"",
-        Location:"",
-        StartDate:"",
-        EndDate:"",
+        CompanyName:"Daffodil International University-DIU",
+        Location:"Dhaka, Bangladesh",
+        StartDate:"May 2016",
+        EndDate:"April 2020",
         Headline:"",
         Industry:"",
         Description:""
     },
     {
         Image:"",
-        Title:"",
-        EmploymentType:"",
-        CompanyName:"",
-        Location:"",
-        StartDate:"",
-        EndDate:"",
-        Headline:"",
-        Industry:"",
+        Title:"Software Developer",
+        EmploymentType:"Full-time",
+        CompanyName:"W3S Cloud Technology",
+        Location:"Dhaka, Bangladesh",
+        StartDate:"Aug 2021",
+        EndDate:"Present",
+        Headline:"Junior React/Javascript at w3scloud technology",
+        Industry:"Computer Software",
         Description:""
     }
 ]
