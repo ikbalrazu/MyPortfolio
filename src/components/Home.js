@@ -4,6 +4,7 @@ import {FaFacebookSquare,FaTwitterSquare,FaLinkedin,FaInstagramSquare,FaYoutubeS
 import '../styles/home.css';
 import About from './About';
 import Experience from './Experience';
+import Work from './Work';
 
 const Home = () => {
 
@@ -56,6 +57,7 @@ const Home = () => {
         </div>
         <About/>
         <Experience/>
+        <Work/>
         </>
     )
 };

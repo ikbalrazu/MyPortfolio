@@ -23,7 +23,7 @@ const Experience = () => {
                     contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                     date="Aug 2021 - present"
                     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<img className="time-icon" src={W3scloud} style={{borderRadius:"40%"}}/>}
+                    icon={<img className="time-icon" src={W3scloud} style={{borderRadius:"50%"}}/>}
                     >
                     <h3 className="vertical-timeline-element-title">Software Developer</h3>
                     {/* <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
@@ -38,7 +38,7 @@ const Experience = () => {
                     className="vertical-timeline-element--work"
                     date="May 2016 - April 2020"
                     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<img className="time-icon" src={DiuIcon} style={{borderRadius:"40%"}}/>}
+                    icon={<img className="time-icon" src={DiuIcon} style={{borderRadius:"50%"}}/>}
                     >
                     <h3 className="vertical-timeline-element-title">Software Engineer</h3>
                     {/* <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4> */}
