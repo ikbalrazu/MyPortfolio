@@ -1,10 +1,12 @@
 
 .profile-container{
+    width: 70%;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: auto 500px 200px;
-    gap:5px;
-    padding: 60px;
+    gap:6px;
+    /* padding: 250px; */
 }
 .aboutme{
     text-align: center;
@@ -41,9 +43,16 @@
     border-bottom: 0.2px solid white;
 } */
 .summeryaboutme{
-
     grid-column: 1/8;
-    background-color: wheat;
+    
+    
+}
+.contentAboutme{
+    margin-top: 20px;
+    color: #8892b0;
+    line-height: 1.4;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .progileimage{
     grid-column: 8/-1;
@@ -54,7 +63,12 @@
 }
 .skills{
     grid-column: 1/-1;
-    background-color: yellow;
+    /* background-color: yellow; */
+}
+.skillscontent{
+    color: #8892b0;
+    line-height: 1.4;
+    font-size: 25px;
 }
 .about-responsive{
     display: none;
@@ -66,13 +80,13 @@
     .about-responsive{
         display: grid;
         grid-template-columns: repeat(12,1fr);
-        gap: 10px;
+        gap: 5px;
         padding: 10px;
         margin-bottom: 40px;
     }
     .headline{
         grid-column: 1/-1;
-        background-color: #26272b;
+        /* background-color: #26272b; */
     }
     .aboutmeheadline2::before{
         color: #ccd6f6;
@@ -80,19 +94,33 @@
     }
     .circle-image{
         grid-column: 1/-1;
-        background-color: #9fa7bd;
+        /* background-color: #9fa7bd; */
     }
     .aboutme-summery{
         grid-column: 1/-1;
     }
+    .contentaboutme{
+        margin-top: 20px;
+        color: #8892b0;
+        line-height: 1.4;
+        font-size: 21px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
     .highlighs-skills{
         grid-column: 1/-1;
+    }
+    .highlightscontent{
+        margin-top: 3px;
+        color: #8892b0;
+        line-height: 1.4;
+        font-size: 21px;
+        font-weight: bold;
     }
     .parent{
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 40vh;
+        min-height: 27vh;
     }
     .circle{
         position: relative;
