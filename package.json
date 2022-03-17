@@ -1,6 +1,5 @@
 {
   "name": "my-app",
-  "homepage": "https://ikbalrazu.github.io/MyPortfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
