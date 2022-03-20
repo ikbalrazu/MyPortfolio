@@ -55,9 +55,9 @@ const Home = () => {
             <button className='getresume'>Get Resume</button>
         </div>
         </div>
-        <About/>
+        {/* <About/>
         <Experience/>
-        <Work/>
+        <Work/> */}
         </>
     )
 };

@@ -8,9 +8,18 @@ import * as FaIcons from 'react-icons/fa';
 import { SidebarData } from './SidebarData';
 import {IconContext} from 'react-icons'
 import { Link } from 'react-router-dom';
+import {HashLink} from 'react-router-hash-link';
 import Home from './Home';
+import About from './About';
+import Experience from './Experience';
 
 const Header = () =>{
+
+
+    window.addEventListener("scroll", function(){
+        const header = this.document.querySelector(".header")
+        header.classList.toggle("active",this.window.scrollY > 0)
+    });
 
     const [click,setClick] = useState(false);
 
@@ -23,7 +32,7 @@ const Header = () =>{
 
     return(
         <>
-        <div className="navbar">
+        <div className="header navbar">
             <div className="logo">
             <Link to="/" style={{textDecoration:"none"}}>
             IQBAL
@@ -32,35 +41,37 @@ const Header = () =>{
             <div className='nav__ul'>
             <ul className="navbar_ul">
                 <li>
-                    <Link to="/about">About</Link>
+                    <HashLink smooth to="/#aboutpage">About</HashLink>
                     {/* <a href="#">About</a> */}
                 </li>
                 <li>
-                    <Link to="/experience">Experience</Link>
+                    <HashLink 
+                    smooth
+                    to="/#experiencepage">Experience</HashLink>
                     {/* <a href="#">Experience</a> */}
                 </li>
                 <li>
-                    <Link to="#">Services</Link>
+                    <HashLink to="#">Services</HashLink>
                     {/* <a href="#">Experience</a> */}
                 </li>
                 <li>
-                    <Link to="#">Skills</Link>
+                    <HashLink to="#">Skills</HashLink>
                     {/* <a href="#">Experience</a> */}
                 </li>
                 <li>
-                    <Link to="/work">Work</Link>
+                    <HashLink to="/work">Work</HashLink>
                     {/* <a href="#">Work</a> */}
                 </li>
                 <li>
-                    <Link to="/work">Blog</Link>
+                    <HashLink to="/work">Blog</HashLink>
                     {/* <a href="#">Work</a> */}
                 </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    <HashLink to="/contact">Contact</HashLink>
                     {/* <a href="#">Contact</a> */}
                 </li>
                 <li>
-                    <Link to="#" className="btn">Resume</Link>
+                    <HashLink to="#" className="btn">Resume</HashLink>
                 {/* <a href="#" className="btn">Resume</a> */}
                 </li>
                 
@@ -88,10 +99,10 @@ const Header = () =>{
                     {SidebarData.map((item,index)=>{
                         return(
                             <li key={index} className={item.cName}>
-                                <Link to={item.path}>
+                                <HashLink smooth to={item.path}>
                                     {item.icon}
                                     <span>{item.title}</span>
-                                </Link>
+                                </HashLink>
                             </li>
                         )
                     })}
@@ -100,7 +111,19 @@ const Header = () =>{
             </nav>
             </IconContext.Provider>
             </div>
-            {/* <Home/> */}
+            <section>
+            <Home/>
+            </section>
+
+            <section id='aboutpage'>
+            <About/>
+            </section>
+
+            <section id='experiencepage'>
+            <Experience/>
+            </section>
+            
+            
         </>
     )
 }

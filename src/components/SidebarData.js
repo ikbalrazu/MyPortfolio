@@ -8,13 +8,13 @@ import * as GiIcons from 'react-icons/gi';
 export const SidebarData = [
     {
         title: 'About',
-        path:"/",
+        path:"/#aboutpage",
         icon:<CgIcons.CgProfile/>,
         cName:'nav-text'
     },
     {
         title: 'Experience',
-        path:"/experience",
+        path:"/#experiencepage",
         icon:<GiIcons.GiGiftOfKnowledge/>,
         cName:'nav-text'
     },

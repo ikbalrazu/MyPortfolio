@@ -4,8 +4,8 @@
     margin: auto;
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: auto 500px 200px;
-    gap:6px;
+    grid-template-rows: auto 400px 150px;
+    gap:8px;
     /* padding: 250px; */
 }
 .aboutme{
@@ -50,8 +50,8 @@
 .contentAboutme{
     margin-top: 20px;
     color: #8892b0;
-    line-height: 1.4;
-    font-size: 25px;
+    line-height: 1.2;
+    font-size: 19px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .progileimage{
@@ -59,7 +59,7 @@
     /* background-image: url("../images/mypicture.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;*/
-    border-radius: 5px; 
+    border-radius: 8px; 
 }
 .skills{
     grid-column: 1/-1;
@@ -67,8 +67,8 @@
 }
 .skillscontent{
     color: #8892b0;
-    line-height: 1.4;
-    font-size: 25px;
+    line-height: 1.3;
+    font-size: 21px;
 }
 .about-responsive{
     display: none;

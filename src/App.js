@@ -12,13 +12,13 @@ import ErrorPage from './components/ErrorPage';
 function App() {
   return (
     <BrowserRouter>
-      <Header/>
+      {/* <Header/> */}
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
+        <Route path="/" element={<Header/>}/>
+        {/* <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/experience" element={<Experience/>}/>
-        <Route path="/work" element={<Work/>}/>
+        <Route path="/work" element={<Work/>}/> */}
         <Route path="*" element={<ErrorPage/>}/>
       </Routes>
     </BrowserRouter>
