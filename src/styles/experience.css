@@ -9,6 +9,7 @@
     grid-column: 1/-1;
     text-align: center;
     color: #ccd6f6;
+    margin-bottom: 35px;
 }
 .Timeline{
     grid-column: 1/-1;

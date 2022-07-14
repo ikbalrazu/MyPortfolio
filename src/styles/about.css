@@ -4,9 +4,11 @@
     margin: auto;
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: auto 400px 150px;
+    grid-template-rows: auto auto auto;
     gap:8px;
     /* padding: 250px; */
+    margin-bottom: 40px;
+
 }
 .aboutme{
     text-align: center;
@@ -45,8 +47,8 @@
 .summeryaboutme{
     grid-column: 1/8;
     
-    
 }
+
 .contentAboutme{
     margin-top: 20px;
     color: #8892b0;
@@ -66,6 +68,11 @@
     /* background-color: yellow; */
 }
 .skillscontent{
+    color: #8892b0;
+    line-height: 1.3;
+    font-size: 21px;
+}
+.workingon{
     color: #8892b0;
     line-height: 1.3;
     font-size: 21px;
@@ -107,6 +114,14 @@
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     .highlighs-skills{
+        grid-column: 1/-1;
+        margin-top: 10px;
+        color: #8892b0;
+    }
+    .workingon{
+         color: #8892b0;
+    }
+    .education{
         grid-column: 1/-1;
     }
     .highlightscontent{

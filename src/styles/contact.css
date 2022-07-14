@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+.container {
+  /* background-color: rgb(107, 104, 104); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 60vh;
+  padding: 1.5rem;
+  background-color: #0a192f;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* .contact-info{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+} */
+
+.contact-info {
+  padding: 2.3rem 3.5rem;
+  position: relative;
+}
+
+.contact-info .title {
+  color: #1abc9c;
+}
+
+.text {
+  color: #333;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.information {
+  display: flex;
+  color: rgb(224, 223, 223);
+  margin: 0.7rem 0;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.icon {
+  width: 28px;
+  margin-right: 0.9rem;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.social-icons a:hover{
+  transition: all 3s;
+  color: #1abc9c;
+}
+
+.fa__icon{
+  width: 30px;
+  height: 30px;
+  transition: all 3s;
+}
+
+/* .fa__icon:hover{
+  background-color: #333;
+} */
+
+.title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.social-media p {
+  color: #1abc9c;
+}
+
+.social-media {
+  padding: 2rem 0 0 0;
+}
+
+
+
+@media screen and (max-width: 600px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+}

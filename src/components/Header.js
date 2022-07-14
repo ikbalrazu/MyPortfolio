@@ -12,6 +12,8 @@ import {HashLink} from 'react-router-hash-link';
 import Home from './Home';
 import About from './About';
 import Experience from './Experience';
+import Work from './Work';
+import Contact from './Contact';
 
 const Header = () =>{
 
@@ -59,15 +61,15 @@ const Header = () =>{
                     {/* <a href="#">Experience</a> */}
                 </li>
                 <li>
-                    <HashLink to="/work">Work</HashLink>
+                    <HashLink to="/#work">Work</HashLink>
                     {/* <a href="#">Work</a> */}
                 </li>
                 <li>
-                    <HashLink to="/work">Blog</HashLink>
+                    <HashLink to="/blog">Blog</HashLink>
                     {/* <a href="#">Work</a> */}
                 </li>
                 <li>
-                    <HashLink to="/contact">Contact</HashLink>
+                    <HashLink smooth to="/#contact">Contact</HashLink>
                     {/* <a href="#">Contact</a> */}
                 </li>
                 <li>
@@ -123,6 +125,13 @@ const Header = () =>{
             <Experience/>
             </section>
             
+            <section id='work'>
+            <Work/>
+            </section>
+
+            <section id='contact'>
+            <Contact/>
+            </section>
             
         </>
     )
