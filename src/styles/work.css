@@ -1,3 +1,9 @@
+
+.workheadline::before{
+    color: #ccd6f6;
+    content: "Work";
+}
+
 .project-section{
     width: 100%;
     min-height: 100vh;

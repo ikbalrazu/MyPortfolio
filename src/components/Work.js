@@ -6,8 +6,12 @@ import Project2 from '../images/projects/project-2.jpg'
 const Work = () => {
   return(
     <>
+    <div style={{textAlign:"center",marginBottom:"40px"}}>
+    <h1 className='workheadline'></h1>
+    </div>
+
       <div className='project-section'>
-        <h1 className='project-heading'>Some of my projects</h1>
+        {/* <h1 className='project-heading'>Some of my projects</h1> */}
         <div className='project-container'>
 
           <div className='project-card'>
