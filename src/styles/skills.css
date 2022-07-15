@@ -1,9 +1,9 @@
-* {
+/* * {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     list-style: none;
     padding: 0;
     margin: 0;
-  }
+  } */
   
   /* body {
     background: #333;
@@ -13,8 +13,8 @@
 
   .container{
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: stretch;
+    margin-bottom: 20px;
   }
   
   .skill-title {
@@ -31,9 +31,7 @@
   }
   
   .frontend-skill {
-    position: relative;
-    left: 4%;
-    width: 500px;
+    width: 450px;
     margin: 60px auto;
     color: #fff;
     padding: 20px;
@@ -41,9 +39,7 @@
   }
 
   .backend-skill{
-    position: relative;
-    right: 4%;
-    width: 500px;
+    width: 450px;
     margin: 60px auto;
     color: #fff;
     padding: 20px;
@@ -53,11 +49,13 @@
   .frontend-skill li {
     margin: 20px 0;
     padding: 10px;
+    list-style: none;
   }
 
   .backend-skill li{
     margin: 20px 0;
     padding: 10px;
+    list-style: none;
   }
   
   .bar {
@@ -221,4 +219,29 @@
     100% {
       width: 40%;
     }
+  }
+
+  @media screen and (max-width: 600px){
+    
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .frontend-skill {
+      width: 300px;
+      margin: 60px auto;
+      color: #fff;
+      padding: 20px;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+  
+    .backend-skill{
+      width: 300px;
+      margin: 60px auto;
+      color: #fff;
+      padding: 20px;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+
   }
