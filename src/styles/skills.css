@@ -87,20 +87,100 @@
   
   .html {
     width: 90%;
-    animation: css 3s;
+    animation: html 3s;
   }
   .css {
     width: 70%;
     animation: css 3s;
   }
-  .php {
-    width: 45%;
-    animation: php 3s;
+  .reactjs {
+    width: 75%;
+    animation: reactjs 3s;
   }
   .javascript {
-    width: 60%;
+    width: 70%;
     animation: javascript 3s;
   }
+  .nextjs{
+    width: 40%;
+    animation: nextjs 3s;
+  }
+  .bootstrap{
+    width: 70%;
+    animation: bootstrap 3s;
+  }
+  @keyframes bootstrap{
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+  .materialui{
+    width: 60%;
+    animation: materialui 3s;
+  }
+  @keyframes materialui{
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 60%;
+    }
+  }
+
+  /* backend */
+  .nodejs{
+    width: 65%;
+    animation: nodejs 3s;
+  }
+  @keyframes nodejs{
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 65%;
+    }
+  }
+  .python{
+    width: 60%;
+    animation: python 3s;
+  }
+  @keyframes python{
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 60%;
+    }
+  }
+  .mongodb{
+    width: 70%;
+    animation: mongodb 3s;
+  }
+  @keyframes mongodb{
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+  .mysql{
+    width: 72%;
+    animation: mysql 3s;
+  }
+  @keyframes mysql{
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 72%;
+    }
+  }
+
+
   
   @keyframes html {
     0% {
@@ -118,12 +198,12 @@
       width: 70%;
     }
   }
-  @keyframes php {
+  @keyframes reactjs {
     0% {
       width: 0%;
     }
     100% {
-      width: 45%;
+      width: 75%;
     }
   }
   @keyframes javascript {
@@ -132,5 +212,13 @@
     }
     100% {
       width: 60%;
+    }
+  }
+  @keyframes nextjs {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 40%;
     }
   }

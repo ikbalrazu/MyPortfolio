@@ -27,31 +27,31 @@ const Skills = () => {
         <li>
           <h3>JavsaScript</h3>
           <span className="bar">
-            <span className="php"></span>
+            <span className="javascript"></span>
           </span>
         </li>
         <li>
           <h3>React JS</h3>
           <span className="bar">
-            <span className="javascript"></span>
+            <span className="reactjs"></span>
           </span>
         </li>
         <li>
           <h3>Next JS</h3>
           <span className="bar">
-            <span className="javascript"></span>
+            <span className="nextjs"></span>
           </span>
         </li>
         <li>
           <h3>Bootstrap</h3>
           <span className="bar">
-            <span className="javascript"></span>
+            <span className="bootstrap"></span>
           </span>
         </li>
         <li>
           <h3>Material-UI</h3>
           <span className="bar">
-            <span className="javascript"></span>
+            <span className="materialui"></span>
           </span>
         </li>
       </div>
@@ -61,25 +61,25 @@ const Skills = () => {
         <li>
           <h3>Node JS</h3>
           <span className="bar">
-            <span className="html"></span>
+            <span className="nodejs"></span>
           </span>
         </li>
         <li>
           <h3>Python</h3>
           <span className="bar">
-            <span className="css"></span>
+            <span className="python"></span>
           </span>
         </li>
         <li>
           <h3>mongoDB</h3>
           <span className="bar">
-            <span className="php"></span>
+            <span className="mongodb"></span>
           </span>
         </li>
         <li>
           <h3>MySQL</h3>
           <span className="bar">
-            <span className="javascript"></span>
+            <span className="mysql"></span>
           </span>
         </li>
       </div>
