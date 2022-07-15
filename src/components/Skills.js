@@ -9,32 +9,80 @@ const Skills = () => {
     return(
         <>
             <h1 style={{color:"#ccd6f6",textAlign:"center",marginTop:"60px"}}>Skills</h1>
-            <div className="skill">
-        {/* <h1>my skills</h1> */}
+        <div className="container">
+        <div className="frontend-skill">
+        <h1 className="skill-title">Frontend</h1>
         <li>
-          <h3>html</h3>
+          <h3>HTML</h3>
           <span className="bar">
             <span className="html"></span>
           </span>
         </li>
         <li>
-          <h3>css</h3>
+          <h3>CSS</h3>
           <span className="bar">
             <span className="css"></span>
           </span>
         </li>
         <li>
-          <h3>php</h3>
+          <h3>JavsaScript</h3>
           <span className="bar">
             <span className="php"></span>
           </span>
         </li>
         <li>
-          <h3>javascript</h3>
+          <h3>React JS</h3>
           <span className="bar">
             <span className="javascript"></span>
           </span>
         </li>
+        <li>
+          <h3>Next JS</h3>
+          <span className="bar">
+            <span className="javascript"></span>
+          </span>
+        </li>
+        <li>
+          <h3>Bootstrap</h3>
+          <span className="bar">
+            <span className="javascript"></span>
+          </span>
+        </li>
+        <li>
+          <h3>Material-UI</h3>
+          <span className="bar">
+            <span className="javascript"></span>
+          </span>
+        </li>
+      </div>
+
+      <div className="backend-skill">
+        <h1 className="skill-title">Backend</h1>
+        <li>
+          <h3>Node JS</h3>
+          <span className="bar">
+            <span className="html"></span>
+          </span>
+        </li>
+        <li>
+          <h3>Python</h3>
+          <span className="bar">
+            <span className="css"></span>
+          </span>
+        </li>
+        <li>
+          <h3>mongoDB</h3>
+          <span className="bar">
+            <span className="php"></span>
+          </span>
+        </li>
+        <li>
+          <h3>MySQL</h3>
+          <span className="bar">
+            <span className="javascript"></span>
+          </span>
+        </li>
+      </div>
       </div>
         </>
     )
