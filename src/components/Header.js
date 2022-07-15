@@ -14,6 +14,7 @@ import About from './About';
 import Experience from './Experience';
 import Work from './Work';
 import Contact from './Contact';
+import Skills from './Skills';
 
 const Header = () =>{
 
@@ -57,7 +58,7 @@ const Header = () =>{
                     {/* <a href="#">Experience</a> */}
                 </li>
                 <li>
-                    <HashLink to="#">Skills</HashLink>
+                    <HashLink smooth to="/#skillspage">Skills</HashLink>
                     {/* <a href="#">Experience</a> */}
                 </li>
                 <li>
@@ -123,6 +124,10 @@ const Header = () =>{
 
             <section id='experiencepage'>
             <Experience/>
+            </section>
+
+            <section id='skillspage'>
+                <Skills/>
             </section>
             
             <section id='work'>
