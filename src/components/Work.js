@@ -4,14 +4,110 @@ import Project1 from '../images/projects/project-1.jpg'
 import Project2 from '../images/projects/project-2.jpg'
 
 const Work = () => {
+
+  const projects = [
+    {
+      Project:"1",
+      ProjectName:"",
+      StartDate:"",
+      EndDate:"",
+      ProjectURL:"",
+      Description:"",
+      ProjectImage:""
+    },
+    {
+      Project:"2",
+      ProjectName:"",
+      StartDate:"",
+      EndDate:"",
+      ProjectURL:"",
+      Description:"",
+      ProjectImage:""
+    },
+    {
+      Project:"3",
+      ProjectName:"",
+      StartDate:"",
+      EndDate:"",
+      ProjectURL:"",
+      Description:"",
+      ProjectImage:""
+    },
+    {
+      Project:"4",
+      ProjectName:"",
+      StartDate:"",
+      EndDate:"",
+      ProjectURL:"",
+      Description:"",
+      ProjectImage:""
+    },
+    {
+      Project:"5",
+      ProjectName:"",
+      StartDate:"",
+      EndDate:"",
+      ProjectURL:"",
+      Description:"",
+      ProjectImage:""
+    },
+    {
+      Project:"6",
+      ProjectName:"",
+      StartDate:"",
+      EndDate:"",
+      ProjectURL:"",
+      Description:"",
+      ProjectImage:""
+    }
+  ]
   return(
     <>
     <div style={{textAlign:"center",marginBottom:"40px"}}>
     <h1 className='workheadline'></h1>
     </div>
 
-      <div className='project-section'>
-        {/* <h1 className='project-heading'>Some of my projects</h1> */}
+    <div className="Container">
+    {/* image row start */}
+    <div className="row">
+        {/* image card start */}
+        <div className="image">
+          <img src="https://hover.blog/wp-content/uploads/2015/08/dot-online-1280x720.png" />
+          <div className="details">
+            <h2>
+              Your <span>Title</span>
+            </h2>
+            <p>hello iqbal i am from bangladesh</p>
+            <div className="more">
+              <a href="#" className="read-more">
+                Read <span>More</span>
+              </a>
+              <div className="icon-links">
+                <a href="#">
+                  <i className="fas fa-heart"></i>
+                </a>
+                <a href="#">
+                  <i className="fas fa-heart"></i>
+                </a>
+                <a href="#">
+                  <i className="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* image card end */}
+      </div>
+      {/* image row start */}
+      </div>
+
+
+
+
+
+
+     {/* old design code */}
+      {/* <div className='project-section'>
         <div className='project-container'>
 
           <div className='project-card'>
@@ -61,11 +157,11 @@ const Work = () => {
           </div>
           
         </div>
-        {/* mobile responsive */}
+        
         <div className='project-responsive'>
 
         </div>
-      </div>
+      </div> */}
     </>
   )
 }

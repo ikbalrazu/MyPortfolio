@@ -53,16 +53,16 @@ const Header = () =>{
                     to="/#experiencepage">Experience</HashLink>
                     {/* <a href="#">Experience</a> */}
                 </li>
-                <li>
+                {/* <li>
                     <HashLink to="#">Services</HashLink>
-                    {/* <a href="#">Experience</a> */}
-                </li>
+                    <a href="#">Experience</a>
+                </li> */}
                 <li>
                     <HashLink smooth to="/#skillspage">Skills</HashLink>
                     {/* <a href="#">Experience</a> */}
                 </li>
                 <li>
-                    <HashLink to="/#work">Work</HashLink>
+                    <HashLink smooth to="/#work">Work</HashLink>
                     {/* <a href="#">Work</a> */}
                 </li>
                 <li>
