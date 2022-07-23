@@ -6,11 +6,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
   min-height: 60vh;
   padding: 1.5rem;
   background-color: #0a192f;
-  gap: 30px;
+  /* gap: 30px; */
   margin-bottom: 50px;
 }
 
@@ -88,9 +88,17 @@
 
 
 @media screen and (max-width: 600px){
-  .container{
+  .container {
+    /* background-color: rgb(107, 104, 104); */
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    min-height: 60vh;
+    padding: 1.5rem;
+    background-color: #0a192f;
+    /* gap: 30px; */
+    margin-bottom: 50px;
   }
 }

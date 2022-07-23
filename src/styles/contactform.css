@@ -85,3 +85,18 @@
     outline: none;
     border: 2px solid #fafafa;
 }
+
+@media screen and (max-width: 600px){
+  .contact__form{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto auto auto auto;
+    justify-items: center;
+  }
+  .form {
+    position: relative;
+    width: 20rem;
+    height: 3rem;
+    margin: 1rem -2rem;
+  }
+}
