@@ -2,63 +2,109 @@ import React from 'react';
 import '../styles/work.css';
 import Project1 from '../images/projects/project-1.jpg'
 import Project2 from '../images/projects/project-2.jpg'
+import Image1 from '../components/work/image/image1.PNG'
 
 const Work = () => {
 
   const projects = [
     {
       Project:"1",
-      ProjectName:"",
-      StartDate:"",
-      EndDate:"",
+      ProjectName:"Personal Chat",
+      StartDate:"Jul 2022",
+      EndDate:"Present",
       ProjectURL:"",
       Description:"",
-      ProjectImage:""
+      ProjectImage:"",
+      Frontend:"React.js",
+      Backend:"Node.js | Socket.io | MongoDB"
+    },
+    {
+      Project:"1",
+      ProjectName:"Investment Portal",
+      StartDate:"Jul 2022",
+      EndDate:"Present",
+      ProjectURL:"",
+      Description:"",
+      ProjectImage:"",
+      Frontend:"React.js",
+      Backend:"Node.js | Zoho Creator"
     },
     {
       Project:"2",
-      ProjectName:"",
-      StartDate:"",
-      EndDate:"",
+      ProjectName:"Portfolio - muhammadiqbal",
+      StartDate:"Apr 2022",
+      EndDate:"Present",
       ProjectURL:"",
       Description:"",
-      ProjectImage:""
+      ProjectImage:"",
+      Frontend:"React.js",
+      Backend:"Node.js"
     },
     {
       Project:"3",
-      ProjectName:"",
-      StartDate:"",
-      EndDate:"",
+      ProjectName:"Zoho CRM - Widget | Twilio Bulk SMS",
+      StartDate:"Feb 2022",
+      EndDate:"Mar 2022",
       ProjectURL:"",
       Description:"",
-      ProjectImage:""
+      ProjectImage:"",
+      Frontend:"React.js | Bootstrap 5",
+      Backend:"Node.js"
     },
     {
       Project:"4",
-      ProjectName:"",
-      StartDate:"",
-      EndDate:"",
+      ProjectName:"Zoho CRM - Extension | Email & Phone validation and verify",
+      StartDate:"Dec 2021",
+      EndDate:"Jan 2022",
       ProjectURL:"",
       Description:"",
-      ProjectImage:""
+      ProjectImage:"",
+      Frontend:"React.js",
+      Backend:""
     },
     {
       Project:"5",
-      ProjectName:"",
-      StartDate:"",
-      EndDate:"",
+      ProjectName:"Zoho CRM - Extension | Find Address From Google Map",
+      StartDate:"Oct 2021",
+      EndDate:"Nov 2021",
       ProjectURL:"",
       Description:"",
-      ProjectImage:""
+      ProjectImage:"",
+      Frontend:"React.js",
+      Backend:""
     },
     {
       Project:"6",
-      ProjectName:"",
-      StartDate:"",
-      EndDate:"",
+      ProjectName:"Zoho CRM - Duplicate Merge",
+      StartDate:"Sep 2021",
+      EndDate:"Oct 2021",
       ProjectURL:"",
       Description:"",
-      ProjectImage:""
+      ProjectImage:"",
+      Frontend:"React.js",
+      Backend:""
+    },
+    {
+      Project:"7",
+      ProjectName:"E-commerce",
+      StartDate:"Feb 2020",
+      EndDate:"Jul 2020",
+      ProjectURL:"",
+      Description:"",
+      ProjectImage:"",
+      Frontend:"Django ",
+      Backend:"Django"
+    },
+    {
+      Project:"8",
+      ProjectName:"MyGroup",
+      StartDate:"Sep 2019",
+      EndDate:"Jan 2020",
+      ProjectURL:"",
+      Description:"",
+      ProjectImage:"",
+      Frontend:"Django ",
+      Backend:"Django"
     }
   ]
   return(
@@ -72,12 +118,13 @@ const Work = () => {
     <div className="row">
         {/* image card start */}
         <div className="image">
-          <img src="https://hover.blog/wp-content/uploads/2015/08/dot-online-1280x720.png" />
+          {/* <img src="https://hover.blog/wp-content/uploads/2015/08/dot-online-1280x720.png" /> */}
+          <img src={Image1} />
           <div className="details">
             <h2>
-              Your <span>Title</span>
+              <span>Investment Portal</span>
             </h2>
-            <p>hello iqbal i am from bangladesh</p>
+            {/* <p>hello iqbal i am from bangladesh</p> */}
             <div className="more">
               <a href="#" className="read-more">
                 Read <span>More</span>

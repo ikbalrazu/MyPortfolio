@@ -13,7 +13,7 @@ const Contact = () => {
     <h1 style={{color:"#ccd6f6",textAlign:"center",marginTop:"60px"}}>Contact</h1>
     <div className='container'>
 
-      <div className='contact-info'>
+      <div className='contact-info' data-aos="zoom-out-right">
         
         <h3 className="title">Let's get in touch</h3>
         
@@ -52,7 +52,7 @@ const Contact = () => {
           </div>
 
       </div>
-      <div className='contact-form'>
+      <div className='contact-form' data-aos="zoom-out-left">
         <ContactForm/>
       </div>
     </div>

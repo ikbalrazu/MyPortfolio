@@ -1,6 +1,6 @@
 import '../styles/header.css';
 //import '../styles/sidebar.css'
-import React,{useState} from 'react';
+import React,{useEffect, useState} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faBars,faTimes} from '@fortawesome/free-solid-svg-icons';
 import * as AiIcons from 'react-icons/ai'
@@ -17,7 +17,7 @@ import Contact from './Contact';
 import Skills from './Skills';
 
 const Header = () =>{
-
+    const [scrollDirection, setScrollDirection] = useState(null);
 
     window.addEventListener("scroll", function(){
         const header = this.document.querySelector(".header")
@@ -32,6 +32,13 @@ const Header = () =>{
     const closeMobileMenu = () => {
         setClick(false);
     }
+
+    useEffect(()=>{
+
+        let lastScrollY = window.pageYOffset;
+        
+
+    },[]);
 
     return(
         <>
@@ -62,7 +69,7 @@ const Header = () =>{
                     {/* <a href="#">Experience</a> */}
                 </li>
                 <li>
-                    <HashLink smooth to="/#work">Work</HashLink>
+                    <HashLink smooth to="/#work">Portfolio</HashLink>
                     {/* <a href="#">Work</a> */}
                 </li>
                 <li>

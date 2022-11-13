@@ -30,14 +30,14 @@ const About = () => {
     </div>
     <div className='summeryaboutme'>
       <p className='contentAboutme'>
-      Hello! My name is Iqbal, and I'm a Junior Front-end Developer. I enjoy creating things that live on the internet. I have a passion for developing web applications. I find myself super comfortable in React.js, Node.js, and Django. I specialize in creating interactive experiences and functional interfaces using React. I have one year of industrial knowledge also. Recently I have worked on Zoho CRM platform where I have developed a lot of widgets and extension projects with react.js and node.js.
+      Hello! My name is Iqbal, and I'm a Junior Front-end Developer. I enjoy creating things that live on the internet. I have a passion for developing web applications. I find myself super comfortable in React.js, Node.js, and Django. I specialize in creating interactive experiences and functional interfaces using React. I have two years of industrial knowledge also. Recently I have worked on Zoho CRM platform where I have developed a lot of widgets and extension projects with react.js and node.js.
       </p>
-      <div style={{display:"flex",flexDirection:"row",marginTop:"20px",textDecoration:"none"}} >
+      <div style={{display:"flex",flexDirection:"row",marginTop:"20px",textDecoration:"none"}} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
       <ul style={{listStyle:"none"}}>
         <h1 className='workingon'>
           I'm Working on...
         </h1>
-        <div style={{paddingTop:"5px",color:"#64ffda"}}>
+        <div style={{paddingTop:"5px",color:"#64ffda"}} >
         <li>▹ React</li>
         <li>▹ Node.js</li>
         <li>▹ Redux for State Mnanagement</li>
@@ -46,10 +46,10 @@ const About = () => {
       </ul>
       </div>
     </div>
-    {/* <div className='progileimage'> */}
+    <div className='progileimage' data-aos="fade-up">
     <img className='progileimage' width="100%" height="100%" src={Mypicture}/>
-    {/* </div> */}
-    <div className='skills'>
+    </div>
+    <div className='skills' data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
       <div style={{display:"flex",flexDirection:"column"}}>
       <h1 className='skillscontent'>Education:</h1>
       <ul style={{listStyle:"none"}}>

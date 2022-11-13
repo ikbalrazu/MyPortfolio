@@ -10,7 +10,7 @@ const Skills = () => {
         <>
             <h1 style={{color:"#ccd6f6",textAlign:"center",marginTop:"60px"}}>Skills</h1>
         <div className="container">
-        <div className="frontend-skill">
+        <div className="frontend-skill" data-aos="fade-right">
         <h1 className="skill-title">Frontend</h1>
         <li>
           <h3>HTML</h3>
@@ -56,7 +56,7 @@ const Skills = () => {
         </li>
       </div>
 
-      <div className="backend-skill">
+      <div className="backend-skill" data-aos="fade-left">
         <h1 className="skill-title">Backend</h1>
         <li>
           <h3>Node JS</h3>

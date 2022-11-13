@@ -19,7 +19,7 @@ export const SidebarData = [
         cName:'nav-text'
     },
     {
-        title: 'Work',
+        title: 'Portfolio',
         path:"/work",
         icon:<MdIcons.MdWork/>,
         cName:'nav-text'

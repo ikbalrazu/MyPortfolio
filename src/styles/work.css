@@ -2,14 +2,17 @@
 
 .workheadline::before{
     color: #ccd6f6;
-    content: "Work";
+    content: "Portfolio";
 }
 
 .container {
     margin: 30px;
+    /* display: flex;
+    flex-wrap: wrap; */
   }
   
   .row {
+    /* width: calc(100% - 10px); */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -240,4 +243,10 @@
     .project-container{
         display: none;
     }
+} */
+
+/* @media screen and (max-width: 640px){
+  .row{
+      width: calc(100% - 10px);
+  }
 } */
