@@ -1,9 +1,9 @@
 
 
-.workheadline::before{
+/* .workheadline::before{
     color: #ccd6f6;
     content: "Portfolio";
-}
+} */
 
 .container {
     margin: 30px;

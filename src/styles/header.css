@@ -78,16 +78,24 @@ a {
   /* .navbar{
         flex-direction: column;
     } */
+
+  .header.active{
+    display: none;
+  }
+
   .nav__toggler {
     display: flex;
     justify-content: flex-end;
+    height: 100%;
+    /* position: fixed; */
   }
+  
   .navbar_ul {
     display: none;
   }
   .navbar2 {
     background-color: #060b26;
-    height: 88px;
+    height: 40px;
     display: flex;
     align-items: center;
   }
@@ -99,7 +107,7 @@ a {
   .nav-menu {
     background-color: #060b26;
     width: 250px;
-    height: 100vh;
+    height: 67vh;
     display: flex;
     justify-content: center;
     position: fixed;

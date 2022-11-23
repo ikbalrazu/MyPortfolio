@@ -8,7 +8,7 @@ const Skills = () => {
 
     return(
         <>
-            <h1 style={{color:"#ccd6f6",textAlign:"center",marginTop:"60px"}}>Skills</h1>
+            {/* <h1 style={{color:"#ccd6f6",textAlign:"center",marginTop:"60px"}}>Skills</h1> */}
         <div className="container">
         <div className="frontend-skill" data-aos="fade-right">
         <h1 className="skill-title">Frontend</h1>

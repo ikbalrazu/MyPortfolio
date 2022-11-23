@@ -12,7 +12,7 @@ const Experience = () => {
         <div className='parent-container'>
 
             <div className='child-container' style={{}}>
-            <h1>Experience</h1>
+            {/* <h1>Experience</h1> */}
             </div>
 
             <div className='Timeline'>

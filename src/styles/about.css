@@ -15,10 +15,10 @@
     padding: 10px;
     grid-column: 1/-1;
 }
-.aboutmeheadline::before{
+/* .aboutmeheadline::before{
     color: #ccd6f6;
     content: "About Me";
-}
+} */
 /* .aboutmeheadline::after{
     display: block;
     margin-left: 10px;
@@ -95,10 +95,10 @@
         grid-column: 1/-1;
         /* background-color: #26272b; */
     }
-    .aboutmeheadline2::before{
+    /* .aboutmeheadline2::before{
         color: #ccd6f6;
         content: "About Me";
-    }
+    } */
     .circle-image{
         grid-column: 1/-1;
         /* background-color: #9fa7bd; */

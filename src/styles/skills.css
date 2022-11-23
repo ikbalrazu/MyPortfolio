@@ -32,7 +32,7 @@
   
   .frontend-skill {
     width: 450px;
-    margin: 60px auto;
+    margin: 30px auto;
     color: #fff;
     padding: 20px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -40,7 +40,7 @@
 
   .backend-skill{
     width: 450px;
-    margin: 60px auto;
+    margin: 30px auto;
     color: #fff;
     padding: 20px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);

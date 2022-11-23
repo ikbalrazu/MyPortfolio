@@ -109,22 +109,24 @@ const Work = () => {
   ]
   return(
     <>
-    <div style={{textAlign:"center",marginBottom:"40px"}}>
+    <div className='container'>
+
+    </div>
+    {/* <div style={{textAlign:"center",marginBottom:"40px"}}>
     <h1 className='workheadline'></h1>
     </div>
 
     <div className="Container">
-    {/* image row start */}
     <div className="row">
-        {/* image card start */}
+        
         <div className="image">
-          {/* <img src="https://hover.blog/wp-content/uploads/2015/08/dot-online-1280x720.png" /> */}
+         
           <img src={Image1} />
           <div className="details">
             <h2>
               <span>Investment Portal</span>
             </h2>
-            {/* <p>hello iqbal i am from bangladesh</p> */}
+            
             <div className="more">
               <a href="#" className="read-more">
                 Read <span>More</span>
@@ -143,10 +145,10 @@ const Work = () => {
             </div>
           </div>
         </div>
-        {/* image card end */}
+        
       </div>
-      {/* image row start */}
-      </div>
+      
+      </div> */}
 
 
 

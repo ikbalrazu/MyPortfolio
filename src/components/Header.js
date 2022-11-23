@@ -92,6 +92,7 @@ const Header = () =>{
             {/* <div className='nav-icon' onClick={handleClick}>
                 {click ? <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon> : <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>}
             </div> */}
+
             <div className='nav__toggler'>
             <IconContext.Provider value={{color:"#fff"}}>
             <div className='navbar2'>
@@ -121,28 +122,46 @@ const Header = () =>{
             </nav>
             </IconContext.Provider>
             </div>
+            
             <section>
             <Home/>
             </section>
 
-            <section id='aboutpage'>
+            <section id='aboutpage' style={{marginTop:"10px"}}>
+            <h1 style={{color:"#ccd6f6",textAlign:"center",marginTop:"10px"}}>About Me</h1>
             <About/>
             </section>
 
-            <section id='experiencepage'>
+            <section id='experiencepage' style={{marginTop:"10px"}}>
+            <h1 style={{color:"#ccd6f6",textAlign:"center",marginTop:"10px"}}>Experience</h1>
             <Experience/>
             </section>
 
-            <section id='skillspage'>
-                <Skills/>
+            <section id='skillspage' style={{marginTop:"10px"}}>
+            <h1 style={{color:"#ccd6f6",textAlign:"center",marginTop:"10px"}}>Skills</h1>
+            <Skills/>
             </section>
             
-            <section id='work'>
+            <section id='work' style={{marginTop:"10px"}}>
+            <h1 style={{color:"#ccd6f6",textAlign:"center",marginTop:"10px"}}>Portfolio</h1>
             <Work/>
             </section>
 
-            <section id='contact'>
+            <section id='contact' style={{marginTop:"10px"}}>
+            <h1 style={{color:"#ccd6f6",textAlign:"center",marginTop:"60px"}}>Contact</h1>
             <Contact/>
+            </section>
+
+            <section>
+            <div style={{
+                display:"flex",
+                flexDirection:"row",
+                justifyContent:"center",
+                textAlign:"center",
+                background:"#172B45"
+                }}>
+                <p style={{color:"white",padding:"6px"}}>Copyright @ Ikbal. </p>
+            </div>
             </section>
             
         </>

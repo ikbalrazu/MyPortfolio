@@ -10,7 +10,7 @@ const Contact = () => {
 
   return(
     <>
-    <h1 style={{color:"#ccd6f6",textAlign:"center",marginTop:"60px"}}>Contact</h1>
+    {/* <h1 style={{color:"#ccd6f6",textAlign:"center",marginTop:"60px"}}>Contact</h1> */}
     <div className='container'>
 
       <div className='contact-info' data-aos="zoom-out-right">
