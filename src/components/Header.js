@@ -21,7 +21,7 @@ const Header = () =>{
 
     window.addEventListener("scroll", function(){
         const header = this.document.querySelector(".header")
-        header.classList.toggle("active",this.window.scrollY > 0)
+        header?.classList?.toggle("active",this.window.scrollY > 0)
     });
 
     const [click,setClick] = useState(false);

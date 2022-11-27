@@ -5,6 +5,7 @@ import '../styles/home.css';
 import About from './About';
 import Experience from './Experience';
 import Work from './Work';
+import myresume from '../resumePDF/myresume.pdf'
 
 const Home = () => {
 
@@ -52,7 +53,9 @@ const Home = () => {
         </div>
         <p style={{color:"#f0f8ff",fontSize:"20px"}}>I'm ready for building applications with front and back end operations.</p>
         <div>
-            <button className='getresume'>Get Resume</button>
+            <button className='getresume'>
+                <a href={myresume} download="ResumeOfficial.pdf">Get Resume</a>
+            </button>
         </div>
         </div>
         {/* <About/>

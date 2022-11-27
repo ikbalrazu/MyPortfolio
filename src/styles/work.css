@@ -5,21 +5,83 @@
     content: "Portfolio";
 } */
 
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App{
+  /* border: 1px solid green; */
+}
+
 .container {
-    margin: 30px;
-    /* display: flex;
-    flex-wrap: wrap; */
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    /* border:1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* justify-content: space-between; */
+  }
+
+  .card{
+    /* border: 1px solid green; */
+    color:white;
+    width: 100%;
+    max-width: 410px;
+    height: 500px;
+    padding: 20px;
+    background: #373b56;
+    margin: 0px 0;
+    /* box-shadow: 0 20px 40px rgba(141, 136, 136, 0.2); */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
+    rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
+  }
+
+  .showmore{
+    /* border: 1px solid yellow; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .showbtn{
+    background-color: #354299;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
+    rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
+  }
+
+  .showbtn:hover{
+    background-color: #29305e;
+    transition: all 0.3s;
+    color: rgb(221, 221, 221);
+  }
+
+  .showimg{
+    margin: 5px 5px;
+    height: 80%;
+    
+    /* background-color: #d7daec; */
+    /* border: 1px solid red; */
   }
   
-  .row {
-    /* width: calc(100% - 10px); */
+  /* .row {
+    width: calc(100% - 10px);
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-  }
+  } */
   
-  .image {
+  /* .image {
     background: #50a7ff;
     position: relative;
     flex: 1;
@@ -27,17 +89,17 @@
     height: 300px;
     margin: 20px;
     overflow: hidden;
-  }
+  } */
   
-  .image img {
+  /* .image img {
     opacity: 0.8;
     position: relative;
     vertical-align: top;
     transition: 0.6s;
     transition-property: opacity;
-  }
+  } */
   
-  .image:hover img {
+  /* .image:hover img {
     opacity: 1;
   }
   
@@ -122,7 +184,7 @@
   
   .more .icon-links a:not(:last-child) i {
     margin-right: 20px;
-  }
+  } */
 
 
 
