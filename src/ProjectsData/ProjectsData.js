@@ -4,6 +4,13 @@ import p1img1 from '../images/projects/project2/img1.PNG';
 import p1img2 from '../images/projects/project2/img2.PNG';
 import p1img3 from '../images/projects/project2/img3.PNG';
 
+//pchat images
+import pchat1 from '../images/projects/P-Chat/pchat1.PNG';
+import pchat2 from '../images/projects/P-Chat/pchat2.PNG';
+import pchat3 from '../images/projects/P-Chat/pchat3.PNG';
+import pchat4 from '../images/projects/P-Chat/pchat4.PNG';
+import pchat5 from '../images/projects/P-Chat/pchat5.PNG'
+
 export const projects = [
     {
       Project:"1",
@@ -107,6 +114,13 @@ export const projects = [
       Description:"",
       ProjectImage:"",
       Frontend:"React.js",
-      Backend:"Node.js | Socket.io | MongoDB"
+      Backend:"Node.js | Socket.io | MongoDB",
+      Images:[
+        {url:pchat1,caption:'Slide 1'},
+        {url:pchat2,caption:'Slide 2'},
+        {url:pchat3,caption:'Slide 3'},
+        {url:pchat4,caption:'Slide 4'},
+        {url:pchat5,caption:'Slide 5'},
+      ] 
     },
 ]
