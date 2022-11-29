@@ -129,10 +129,10 @@ const Work = () => {
           return(
             <div className='card' data-aos="fade-up-right">
               <div data-aos="zoom-in">
-              <h1>{project?.ProjectName}</h1>
+              <h1 className='projecttitle'>{project?.ProjectName}</h1>
               </div>
               <div data-aos="fade-up" data-aos-anchor-placement="top-center">
-              <p>{project?.Frontend} | {project?.Backend}</p>
+              <p className='projectplatform'>{project?.Frontend} | {project?.Backend}</p>
               </div>
               
               <br/>
@@ -144,7 +144,9 @@ const Work = () => {
                   style={{
                     height:"355px",
                     'backgroundImage': `url(${slideImage?.url})`,
-                    borderRadius:"10px"
+                    borderRadius:"10px",
+                    backgroundSize:"360px 355px",
+                    backgroundRepeat:"no-repeat"
                   }}
     
                 >
@@ -156,9 +158,12 @@ const Work = () => {
               ))}
               </Slide>
               </div>
-              <br/>
-              <div>
 
+              <div className='card-btn'>
+              <a href={project?.ProjectURL} target="_blank">
+              <button className='cardbottombtn'>Show Project</button>
+              </a>
+              <button className='cardbottombtn'>Details</button>
               </div>
             </div>
           )
