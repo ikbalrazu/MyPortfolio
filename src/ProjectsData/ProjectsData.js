@@ -9,7 +9,21 @@ import pchat1 from '../images/projects/P-Chat/pchat1.PNG';
 import pchat2 from '../images/projects/P-Chat/pchat2.PNG';
 import pchat3 from '../images/projects/P-Chat/pchat3.PNG';
 import pchat4 from '../images/projects/P-Chat/pchat4.PNG';
-import pchat5 from '../images/projects/P-Chat/pchat5.PNG'
+import pchat5 from '../images/projects/P-Chat/pchat5.PNG';
+
+//Portfolio - muhammadiqbal
+import portfolio1 from '../images/projects/PortfolioMdIqbal/portfolio1.PNG';
+import portfolio2 from '../images/projects/PortfolioMdIqbal/portfolio2.PNG';
+import portfolio3 from '../images/projects/PortfolioMdIqbal/portfolio3.PNG';
+
+//Investment Portal
+import investmentportal1 from '../images/projects/InvestmentPortal/investmentportal1.PNG';
+import investmentportal2 from '../images/projects/InvestmentPortal/investmentportal2.PNG';
+
+//Zoho CRM - Extension | Find Address From Google Map
+import findaddress1 from '../images/projects/FindAddress/findaddress1.png';
+import findaddress2 from '../images/projects/FindAddress/findaddress2.png';
+import findaddress3 from '../images/projects/FindAddress/findaddress3.png';
 
 export const projects = [
     {
@@ -59,7 +73,12 @@ export const projects = [
       Description:"",
       ProjectImage:"",
       Frontend:"React.js",
-      Backend:""
+      Backend:"",
+      Images:[
+        {url:findaddress1,caption:'Slide 1'},
+        {url:findaddress2,caption:'Slide 2'},
+        {url:findaddress3,caption:'Slide 3'},
+      ] 
     },
     {
       Project:"5",
@@ -92,7 +111,12 @@ export const projects = [
       Description:"",
       ProjectImage:"",
       Frontend:"React.js",
-      Backend:"Node.js"
+      Backend:"Node.js",
+      Images:[
+        {url:portfolio1,caption:'Slide 1'},
+        {url:portfolio2,caption:'Slide 2'},
+        {url:portfolio3,caption:'Slide 3'},
+      ] 
     },
     {
       Project:"8",
@@ -103,7 +127,11 @@ export const projects = [
       Description:"",
       ProjectImage:"",
       Frontend:"React.js",
-      Backend:"Node.js | Zoho Creator"
+      Backend:"Node.js | Zoho Creator",
+      Images:[
+        {url:investmentportal1,caption:'Slide 1'},
+        {url:investmentportal2,caption:'Slide 2'},
+      ] 
     },
     {
       Project:"9",

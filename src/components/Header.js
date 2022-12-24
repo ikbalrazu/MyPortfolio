@@ -44,9 +44,9 @@ const Header = () =>{
         <>
         <div className="header navbar">
             <div className="logo">
-            <Link to="/" style={{textDecoration:"none"}}>
+            <a href="http://localhost:3000" style={{textDecoration:"none"}}>
             IQBAL
-            </Link>
+            </a>
             </div>
             <div className='nav__ul'>
             <ul className="navbar_ul">
@@ -123,7 +123,7 @@ const Header = () =>{
             </IconContext.Provider>
             </div>
             
-            <section>
+            <section id='home'>
             <Home/>
             </section>
 
@@ -158,9 +158,10 @@ const Header = () =>{
                 flexDirection:"row",
                 justifyContent:"center",
                 textAlign:"center",
-                background:"#172B45"
+                marginBottom:"10px"
+                // background:"#172B45"
                 }}>
-                <p style={{color:"white",padding:"6px"}}>Copyright @ Ikbal. </p>
+                <p style={{color:"#a8a8a8",padding:"6px",fontSize:"13px"}}>Copyrights © 2022 All Rights Reserved. </p>
             </div>
             </section>
             

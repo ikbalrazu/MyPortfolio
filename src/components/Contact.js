@@ -36,7 +36,7 @@ const Contact = () => {
         <div className="social-media">
             <p>Connect with me :</p>
             <div className="social-icons">
-              <a href="#">
+              <a href='https://www.facebook.com/iqbal.raju123/' target="_blank">
               <FaFacebookSquare className='fa__icon'/>
               </a>
               <a href="#">

@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Work from './components/Work';
 import ErrorPage from './components/ErrorPage';
+import DetailsModal from './components/DetailsModal';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       {/* <Header/> */}
       <Routes>
         <Route path="/" element={<Header/>}/>
+        <Route path="/detailsmodal" element={<DetailsModal/>}/>
         {/* <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/experience" element={<Experience/>}/>

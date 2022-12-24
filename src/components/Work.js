@@ -145,7 +145,7 @@ const Work = () => {
                     height:"355px",
                     'backgroundImage': `url(${slideImage?.url})`,
                     borderRadius:"10px",
-                    backgroundSize:"360px 355px",
+                    backgroundSize:"409px 360px",
                     backgroundRepeat:"no-repeat"
                   }}
     

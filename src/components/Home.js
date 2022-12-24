@@ -16,7 +16,7 @@ const Home = () => {
             <div className='social-details'>
                 <div className='colz'>
                     <div className='colz-icon'>
-                    <a href='https://www.facebook.com/iqbal.raju123/'>
+                    <a href='https://www.facebook.com/iqbal.raju123/' target="_blank">
                         <FaFacebookSquare/>
                     </a>
                     <a href='#'>
@@ -54,7 +54,7 @@ const Home = () => {
         <p style={{color:"#f0f8ff",fontSize:"20px"}}>I'm ready for building applications with front and back end operations.</p>
         <div>
             <button className='getresume'>
-                <a href={myresume} download="ResumeOfficial.pdf">Get Resume</a>
+                <a href={myresume} style={{textDecoration:"none"}} download="ResumeOfficial.pdf">Get Resume</a>
             </button>
         </div>
         </div>
