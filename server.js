@@ -8,6 +8,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors());
+app.use(express.json());
 
 const PORT = process.env.PORT || 4000;
 
@@ -25,31 +26,39 @@ app.get('/',(req,res)=>{
 
 app.post('/sendmail',(req,res)=>{
 
-   const {email,subject,phone,message} = req.body;
+    const {email,subject,phone,message} = req.body;
 
-   console.log(email,subject,phone,message);
-   
+    console.log(email,subject,phone,message);
 
-    // var mailOptions = {
-    //     from: ' "PrivateChatApp" <iqbalraju123@gmail.com>',
-    //     to: email,
-    //     subject: 'Activate your PrivateChatApp account',
-    //     html: `<p>Hi ${name},<br> Thank you for signing up for PrivateChatApp.<br> Best,<br> The PrivateChatApp Team. </p>`
-    // }
+    //console.log(process.env.user);
 
-    // transporter.sendMail(mailOptions, function (error, info) {
-    //     if (error) {
-    //       //console.log(error);
-    //       console.log("Invalid email");
-    //       //res.json("Invalid email");
+    var mailOptions = {
+        from: ` "MuhammadIqbal" ${email}`,
+        to: email,
+        subject: subject,
+        html: `<p>Email: ${email}</p>
+        <br></br>
+        <p>Subject: ${subject}</p>
+        <br></br>
+        <p>Phone Number: ${phone}</p>
+        <br></br>
+        <p>Message: ${message}</p>
+        `
+    }
+
+    transporter.sendMail(mailOptions, function (error, info) {
+        if (error) {
+          console.log(error);
+          console.log("Invalid email");
+          res.json("Invalid email");
           
-    //     } else {
+        } else {
     
-    //       //res.json({ message: "send email successfully" });
-    //       console.log("send email successfully");
+          res.json({ message: "send email successfully" });
+          console.log("send email successfully");
     
-    //     }
-    // });
+        }
+    });
 
 })
 
