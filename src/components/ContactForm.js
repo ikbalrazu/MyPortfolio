@@ -1,16 +1,22 @@
-import React,{useState} from "react";
+import React,{useState,useRef} from "react";
 import '../styles/contactform.css';
 import axios from "axios";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
+
+const styles = {
+  fontFamily: "sans-serif",
+  textAlign: "center",
+  display:"flex",
+  justifyContent:"center",
+  width:"100px"
+};
+
 const ContactForm = () => {
 
-  // const [email,setEmail] = useState();
-  // const [subject, setSubject] = useState();
-  // const [phone, setPhone] = useState();
-  // const [message, setMessage] = useState();
+  const [msg,setMSG] = useState();
 
   const ContactFormSchema = yup.object().shape({
     email: yup.string().required("Email is required").email("Email is invalid"),
@@ -44,14 +50,18 @@ const ContactForm = () => {
 
     if(resdata.data.message === "send email successfully"){
       console.log("message sent successfully!");
+      setMSG("true")
       reset();
+    }else{
+      setMSG("false");
     }
 
   }
+
+  const Successmsg = () =>{
+
     
-  const onError = (errors) => {
-    console.log(errors);
-  };
+  }
 
     return(
         <div className="contact__form">
@@ -74,7 +84,7 @@ const ContactForm = () => {
           
         </div>
         <div>
-        <p style={{color:"red"}}>{errors.email?.message}</p>
+        <p className="validerror">{errors.email?.message}</p>
         </div>
         
         <div className="form">
@@ -92,7 +102,7 @@ const ContactForm = () => {
           </label>
         </div>
         <div>
-        <p style={{color:"red"}}>{errors.subject?.message}</p>
+        <p className="validerror">{errors.subject?.message}</p>
         </div>
         <div className="form">
           <input
@@ -109,7 +119,7 @@ const ContactForm = () => {
           </label>
         </div>
         <div>
-        <p style={{color:"red"}}>{errors.phone?.message}</p>
+        <p className="validerror" style={{color:"red"}}>{errors.phone?.message}</p>
         </div>
         <div className="form">
           <textarea
@@ -125,7 +135,7 @@ const ContactForm = () => {
           </label>
         </div>
         <div>
-        <p style={{color:"red"}}>{errors.message?.message}</p>
+        <p className="messageError">{errors.message?.message}</p>
         </div>
         <div className='form'>
         <button 
@@ -135,7 +145,19 @@ const ContactForm = () => {
         >Send</button>
         </div>
         </div>
+        <div style={{marginLeft:"20px"}}>
+          {msg === "true" &&(
+            <p style={{color:"green"}}>Message Send Successfully. Thanks</p>
+          )}
+
+          {msg === "false" &&(
+              <p style={{color:"red"}}>Incorrect Email Address. Plz try again!</p>
+          )}
+        </div>
+        
         </form>
+        
+        
         </div>
     )
 }

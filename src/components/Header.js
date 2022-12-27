@@ -15,6 +15,8 @@ import Experience from './Experience';
 import Work from './Work';
 import Contact from './Contact';
 import Skills from './Skills';
+import { frontendurl } from '..';
+
 
 const Header = () =>{
     const [scrollDirection, setScrollDirection] = useState(null);
@@ -44,7 +46,7 @@ const Header = () =>{
         <>
         <div className="header navbar">
             <div className="logo">
-            <a href="http://localhost:3000" style={{textDecoration:"none"}}>
+            <a href={frontendurl} style={{textDecoration:"none"}}>
             IQBAL
             </a>
             </div>
