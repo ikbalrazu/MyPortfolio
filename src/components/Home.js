@@ -38,7 +38,7 @@ const Home = () => {
             </div>
             
         <div style={{textAlign:"center"}}>
-        <p className='nameHeader' style={{color:"#64ffda",marginRight:"540px"}}>Hi, my name is</p>
+        <p className='nameHeader' style={{color:"#64ffda",marginRight:"590px"}}>Hi, I am</p>
         <h1 style={{color:"#ccd6f6",fontSize:"clamp(40px, 8vw, 80px)"}}>Muhammad Iqbal</h1>
         </div>
         

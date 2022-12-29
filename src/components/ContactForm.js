@@ -4,6 +4,7 @@ import axios from "axios";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import { Vortex } from 'react-loader-spinner';
 
 
 const styles = {
@@ -17,6 +18,7 @@ const styles = {
 const ContactForm = () => {
 
   const [msg,setMSG] = useState();
+  const [loader,setLoader] = useState(false);
 
   const ContactFormSchema = yup.object().shape({
     email: yup.string().required("Email is required").email("Email is invalid"),
@@ -32,12 +34,14 @@ const ContactForm = () => {
   })
 
   const SendMessage = async(data) => {
-    console.log({data});
+    // console.log({data});
     
-    console.log(data.email);
-    console.log(data.subject);
-    console.log(data.phone);
-    console.log(data.message);
+    // console.log(data.email);
+    // console.log(data.subject);
+    // console.log(data.phone);
+    // console.log(data.message);
+
+    setLoader(true);
 
     const email = data.email;
     const subject = data.subject;
@@ -46,21 +50,18 @@ const ContactForm = () => {
 
     const resdata = await axios.post("/sendmail",{email,subject,phone,message});
 
-    console.log(resdata);
+    //console.log(resdata);
 
     if(resdata.data.message === "send email successfully"){
+      setLoader(false);
       console.log("message sent successfully!");
       setMSG("true")
       reset();
     }else{
+      setLoader(false);
       setMSG("false");
     }
 
-  }
-
-  const Successmsg = () =>{
-
-    
   }
 
     return(
@@ -144,8 +145,24 @@ const ContactForm = () => {
         // onClick={SendMessage}
         >Send</button>
         </div>
+        
         </div>
-        <div style={{marginLeft:"20px"}}>
+        <div style={{
+          // border:"1px solid red",
+          marginLeft:"20px",
+          display:"flex",
+          justifyContent:"center",
+          alignItems:"center"
+          }}>
+        <Vortex
+          visible={loader}
+          height="50"
+          width="50"
+          ariaLabel="vortex-loading"
+          wrapperStyle={{}}
+          wrapperClass="vortex-wrapper"
+          colors={['#0a192f','#0a192f','#0a192f','#0a192f']}
+        />
           {msg === "true" &&(
             <p style={{color:"green"}}>Message Send Successfully. Thanks</p>
           )}
