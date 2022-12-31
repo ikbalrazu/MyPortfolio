@@ -22,7 +22,7 @@ const Home = () => {
                     <a href='#'>
                         <FaTwitterSquare/>
                     </a>
-                    <a href='#'>
+                    <a href='https://www.linkedin.com/in/md-ikbal-hossen-razu-50ba00162' target="_blank">
                         <FaLinkedin/>
                     </a>
                     <a href='#'>

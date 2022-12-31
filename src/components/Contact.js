@@ -42,7 +42,7 @@ const Contact = () => {
               <a href="#">
               <FaTwitterSquare className='fa__icon'/>
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/md-ikbal-hossen-razu-50ba00162" target="_blank">
               <FaLinkedin className='fa__icon'/>
               </a>
               <a href="#">
