@@ -34,7 +34,7 @@ app.post('/sendmail',(req,res)=>{
 
     var mailOptions = {
         from: ` "MuhammadIqbal" ${email}`,
-        to: email,
+        to: "puretutorial123@gmail.com",
         subject: subject,
         html: `<p>Email: ${email}</p>
         <br></br>
