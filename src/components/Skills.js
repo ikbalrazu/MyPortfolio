@@ -31,6 +31,12 @@ const Skills = () => {
           </span>
         </li>
         <li>
+          <h3>TypeScript</h3>
+          <span className="bar">
+            <span className="typescript"></span>
+          </span>
+        </li>
+        <li>
           <h3>React JS</h3>
           <span className="bar">
             <span className="reactjs"></span>

@@ -21,7 +21,7 @@ const Experience = () => {
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                     contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                    date="Aug 2021 - present"
+                    date="Aug 2021 - Feb 2024"
                     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                     icon={<a href='https://w3scloud.com/' target="_blank"><img className="time-icon" src={W3scloud} style={{borderRadius:"50%"}}/></a>}
                     >
@@ -29,7 +29,7 @@ const Experience = () => {
                     <p>
                     W3S Cloud Technology | Full-time
                     </p>
-                    <p>Junior React/Javascript at w3scloud technology</p>
+                    <p>Junior Node.js/React/Javascript at w3scloud technology</p>
                     <p>Dhaka, Bangladesh</p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement

@@ -38,9 +38,9 @@ const About = () => {
           I'm Working on...
         </h1>
         <div style={{paddingTop:"5px",color:"#64ffda"}} >
-        <li>▹ React</li>
         <li>▹ Node.js</li>
-        <li>▹ Redux for State Mnanagement</li>
+        <li>▹ React</li>
+        <li>▹ Redux Toolkit for State Mnanagement</li>
         <li>▹ Building REST API</li>
         </div>
       </ul>

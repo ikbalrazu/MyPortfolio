@@ -5,7 +5,7 @@ import '../styles/home.css';
 import About from './About';
 import Experience from './Experience';
 import Work from './Work';
-import myresume from '../resumePDF/myresume.pdf'
+import myresume from '../resumePDF/myresume2.pdf'
 
 const Home = () => {
 

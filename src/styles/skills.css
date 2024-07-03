@@ -100,8 +100,12 @@
     width: 70%;
     animation: javascript 3s;
   }
+  .typescript {
+    width: 50%;
+    animation: javascript 3s;
+  }
   .nextjs{
-    width: 40%;
+    width: 30%;
     animation: nextjs 3s;
   }
   .bootstrap{
