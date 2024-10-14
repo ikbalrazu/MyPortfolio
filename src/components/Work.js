@@ -127,7 +127,7 @@ const Work = () => {
     <div className='container'>
         {[...projects]?.reverse().slice(0,visible).map((project,index)=>{
           return(
-            <div className='card' data-aos="fade-up-right">
+            <div key={index} className='card' data-aos="fade-up-right">
               <div data-aos="zoom-in">
               <h1 className='projecttitle'>{project?.ProjectName}</h1>
               </div>
@@ -139,7 +139,7 @@ const Work = () => {
               <div className='showimg' data-aos="fade-up-left">
               <Slide  autoplay={false}>
               {project?.Images?.map((slideImage,index)=>(
-                <div className="each-slide-effect">
+                <div key={index} className="each-slide-effect">
                 <div
                   style={{
                     height:"355px",

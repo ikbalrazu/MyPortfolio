@@ -19,7 +19,7 @@ export const ExperienceData = [
         CompanyName:"W3S Cloud Technology",
         Location:"Dhaka, Bangladesh",
         StartDate:"Aug 2021",
-        EndDate:"Present",
+        EndDate:"Jul 2024",
         Headline:"Junior React/Javascript at w3scloud technology",
         Industry:"Computer Software",
         Description:""

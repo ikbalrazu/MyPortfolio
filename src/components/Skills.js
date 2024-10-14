@@ -71,13 +71,13 @@ const Skills = () => {
           </span>
         </li>
         <li>
-          <h3>Python</h3>
+          <h3>Express.js</h3>
           <span className="bar">
             <span className="python"></span>
           </span>
         </li>
         <li>
-          <h3>mongoDB</h3>
+          <h3>MongoDB</h3>
           <span className="bar">
             <span className="mongodb"></span>
           </span>
