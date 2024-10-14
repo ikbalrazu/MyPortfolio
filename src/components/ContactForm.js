@@ -50,11 +50,11 @@ const ContactForm = () => {
 
     const resdata = await axios.post("/sendmail",{email,subject,phone,message});
 
-    //console.log(resdata);
+    // console.log(resdata);
 
     if(resdata.data.message === "send email successfully"){
       setLoader(false);
-      console.log("message sent successfully!");
+      // console.log("message sent successfully!");
       setMSG("true")
       reset();
     }else{

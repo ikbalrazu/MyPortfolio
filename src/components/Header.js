@@ -27,6 +27,11 @@ const Header = () =>{
     });
 
     const [click,setClick] = useState(false);
+    // const [theme, setTheme] = useState('dark');
+
+    // const toggleTheme = () => {
+    //     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+    // };
 
     const handleClick = () => {
         setClick(!click);
@@ -38,16 +43,22 @@ const Header = () =>{
     useEffect(()=>{
 
         let lastScrollY = window.pageYOffset;
-        
+        // const savedTheme = localStorage.getItem('theme') || 'light';
+        // setTheme(savedTheme);
 
     },[]);
+
+    // useEffect(() => {
+    //     localStorage.setItem('theme', theme);
+    //     document.body.className = theme;
+    // }, [theme]);
 
     return(
         <>
         <div className="header navbar">
             <div className="logo">
             <a href={frontendurl} style={{textDecoration:"none"}}>
-            IQBAL
+            IKBAL
             </a>
             </div>
             <div className='nav__ul'>
@@ -82,10 +93,14 @@ const Header = () =>{
                     <HashLink smooth to="/#contact">Contact</HashLink>
                     {/* <a href="#">Contact</a> */}
                 </li>
-                <li>
+                {/* <li>
+                <button className={`theme-toggle-button ${theme}`} onClick={toggleTheme}>
+                    {theme === 'light' ? '🌙' : '☀️'}
+                </button>
+                </li> */}
+                {/* <li>
                     <HashLink to="#" className="btn">Resume</HashLink>
-                {/* <a href="#" className="btn">Resume</a> */}
-                </li>
+                </li> */}
                 
             </ul>
             </div>
@@ -163,7 +178,7 @@ const Header = () =>{
                 marginBottom:"10px"
                 // background:"#172B45"
                 }}>
-                <p style={{color:"#a8a8a8",padding:"6px",fontSize:"13px"}}>Copyrights © 2022 All Rights Reserved. </p>
+                <p style={{color:"#a8a8a8",padding:"6px",fontSize:"13px"}}>Copyrights © 2024 All Rights Reserved. </p>
             </div>
             </section>
             
