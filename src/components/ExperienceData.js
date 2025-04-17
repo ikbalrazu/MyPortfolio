@@ -18,8 +18,8 @@ export const ExperienceData = [
         EmploymentType:"Full-time",
         CompanyName:"W3S Cloud Technology",
         Location:"Dhaka, Bangladesh",
-        StartDate:"Aug 2021",
-        EndDate:"Jul 2024",
+        StartDate:"Aug 2022",
+        EndDate:"Present",
         Headline:"Junior React/Javascript at w3scloud technology",
         Industry:"Computer Software",
         Description:""

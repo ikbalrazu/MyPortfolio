@@ -135,7 +135,7 @@ export const projects = [
     },
     {
       Project:"9",
-      ProjectName:"P-Chat",
+      ProjectName:"P-Chat-Pro",
       StartDate:"Jul 2022",
       EndDate:"Present",
       ProjectURL:"https://realchatappbyiqbal.netlify.app",

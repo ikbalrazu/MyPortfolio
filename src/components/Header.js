@@ -1,8 +1,5 @@
 import '../styles/header.css';
-//import '../styles/sidebar.css'
 import React,{useEffect, useState} from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faBars,faTimes} from '@fortawesome/free-solid-svg-icons';
 import * as AiIcons from 'react-icons/ai'
 import * as FaIcons from 'react-icons/fa';
 import { SidebarData } from './SidebarData';
@@ -19,7 +16,6 @@ import { frontendurl } from '..';
 
 
 const Header = () =>{
-    const [scrollDirection, setScrollDirection] = useState(null);
 
     window.addEventListener("scroll", function(){
         const header = this.document.querySelector(".header")
@@ -27,11 +23,6 @@ const Header = () =>{
     });
 
     const [click,setClick] = useState(false);
-    // const [theme, setTheme] = useState('dark');
-
-    // const toggleTheme = () => {
-    //     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
-    // };
 
     const handleClick = () => {
         setClick(!click);
@@ -41,10 +32,6 @@ const Header = () =>{
     }
 
     useEffect(()=>{
-
-        let lastScrollY = window.pageYOffset;
-        // const savedTheme = localStorage.getItem('theme') || 'light';
-        // setTheme(savedTheme);
 
     },[]);
 

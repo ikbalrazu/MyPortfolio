@@ -2,9 +2,6 @@ import React from 'react';
 import { ReactTypical } from '@deadcoder0904/react-typical';
 import {FaFacebookSquare,FaTwitterSquare,FaLinkedin,FaInstagramSquare,FaYoutubeSquare} from 'react-icons/fa';
 import '../styles/home.css';
-import About from './About';
-import Experience from './Experience';
-import Work from './Work';
 import myresume from '../resumePDF/myresume2.pdf'
 
 const Home = () => {
